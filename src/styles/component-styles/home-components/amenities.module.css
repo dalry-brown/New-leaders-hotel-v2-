@@ -1,0 +1,111 @@
+.amenity{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 16px;
+    gap: 100px !important;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.amenityInfo{
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px !important; */
+    justify-content: flex-start;
+    /* padding: 10px; */
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.amenityImage{
+    width: 70%;
+}
+
+.amenityImage img{
+    border-radius: 16px;
+    box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+    max-width: 802px;
+    width: 100%;
+    /* max-height: 518px; */
+    height: auto;
+}
+
+
+
+.learnMore{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: var(--label-large-font-size);
+    letter-spacing: var(--label-large-letter-spacing);
+    /* padding-right: 60px;
+    padding-top: 40px; */
+}
+
+.learnMore button:hover{
+    background-color: var(--tetiary-color);
+    color: var(--default-background-color);
+    transition: ease-in .25s;
+}
+
+@media only screen and (max-width: 1024px){
+    .amenity{
+        gap: 80px;
+        justify-content: space-between;
+    }
+    
+    .amenityImage img{
+        border-radius: 16px;
+        box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+        max-width: 525px;
+        width: 100%;
+        max-height: 302.25px;
+        height: auto;
+    }
+
+    .learnMore{
+        font-size: var(--label-medium-font-size);
+        letter-spacing: var(--label-medium-letter-spacing);
+    }
+
+
+}
+
+@media only screen and (max-width: 599px){
+    .amenity{
+        /* gap: 10px; */
+        gap: 40px !important;
+        justify-content: center;
+    }
+    
+    .amenityInfo{
+        width: 100%;
+    }
+    
+    .amenityImage img{
+        max-width: 390px;
+        width: 100%;
+        max-height: 226.69px;
+        height: auto;
+    }
+    
+    .amenityImage{
+        width: 100%;
+        text-align: center;
+    }
+
+    .learnMore{
+        font-size: var(--label-small-font-size);
+        letter-spacing: var(--label-small-letter-spacing);
+    }
+
+
+}
+
+@media only screen and (max-width: 405px){
+    
+
+    
+}

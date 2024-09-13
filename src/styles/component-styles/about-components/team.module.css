@@ -1,0 +1,157 @@
+.team{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--default-background-color);
+}
+
+.teamContainer{
+  padding: 80px 60px;
+  /* display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 60px; */
+  color: var(--body-text-color);
+  font-family: var(--default-font-family);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  /* padding: 16px; */
+}
+
+.teamMember{
+  border-radius: 12px;
+  box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+}
+
+.teamMember img{
+  width: 100%;
+}
+
+.teamMember .about{
+  border-radius: 0 0 12px 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.teamMember .about p{
+  margin: 0;
+  padding: 0;
+  font-size: var(--body-large-font-size); 
+  letter-spacing: var(--body-large-letter-spacing);
+  font-weight: 400;
+}
+
+.teamMember .about label{
+  font-size: var(--label-large-font-size); 
+  letter-spacing: var(--label-large-letter-spacing);
+  color: var(--tetiary-color);
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+
+  .teamContainer{
+    /* padding: 80px 60px; */
+    /* display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 60px; */
+    /* color: var(--body-text-color);
+    font-family: var(--default-font-family);
+    display: grid; */
+
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    /* gap: 16px; */
+    /* padding: 16px; */
+  }
+
+  .teamMember {
+    max-width: 249.75px;
+    max-height: 292.25px;
+  }
+
+  .teamMember img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .teamMember .about p{
+    font-size: var(--body-medium-font-size); 
+    letter-spacing: var(--body-medium-letter-spacing);
+  }
+  
+  .teamMember .about label{
+    font-size: var(--label-medium-font-size); 
+    letter-spacing: var(--label-medium-letter-spacing);
+
+  }
+}
+
+@media (max-width: 600px) {
+
+  .teamContainer{
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .teamMember {
+    max-width: 187.31px;
+    max-height: 219.19px;
+  }
+
+  .teamMember img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .teamMember .about p{
+    font-size: var(--body-small-font-size); 
+    letter-spacing: var(--body-small-letter-spacing);
+  }
+  
+  .teamMember .about label{
+    font-size: var(--label-small-font-size); 
+    letter-spacing: var(--label-small-letter-spacing);
+  }
+
+  .teamMember .about{
+    padding: 2px 8px;
+    gap: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .teamContainer{
+    justify-items: center;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .teamContainer{
+    /* padding: 80px 60px; */
+    /* display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 60px; */
+    /* color: var(--body-text-color);
+    font-family: var(--default-font-family);
+    display: grid; */
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    /* gap: 16px; */
+    /* padding: 16px; */
+  }
+
+  /* .teamMember {
+    max-width: 100px;
+    max-height: 200px;
+  } */
+}

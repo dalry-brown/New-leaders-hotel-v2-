@@ -1,0 +1,523 @@
+:root {
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --default-font-family: "Roboto";
+
+  --display-large-font-size: 57px;
+  --display-large-letter-spacing: -0.25px;
+  --display-large-line-height: 64px;
+
+  --display-medium-font-size: 45px;
+  --display-medium-letter-spacing: 0px;
+  --display-medium-line-height: 52px;
+
+  --display-small-font-size: 36px;
+  --display-small-letter-spacing: 0px;
+  --display-small-line-height: 44px;
+
+  --headline-large-font-size: 32px;
+  --headline-large-letter-spacing: 0px;
+  --headline-large-line-height: 40px;
+
+  --headline-medium-font-size: 28px;
+  --headline-medium-letter-spacing: 0px;
+  --headline-medium-line-height: 36px;
+
+  --headline-small-font-size: 24px;
+  --headline-small-letter-spacing: 0px;
+  --headline-small-line-height: 32px;
+
+  --body-large-font-size: 16px;
+  --body-large-letter-spacing: 0.5px;
+  --body-large-line-height: 24px;
+
+  --body-medium-font-size: 14px;
+  --body-medium-letter-spacing: 0.25px;
+  --body-medium-line-height: 20px;
+
+  --body-small-font-size: 12px;
+  --body-small-letter-spacing: 0.4px;
+  --body-small-line-height: 16px;
+
+  --label-large-font-size: 14px;
+  --label-large-letter-spacing: 0.1px;
+  --label-large-line-height: 20px;
+
+  --label-medium-font-size: 12px;
+  --label-medium-letter-spacing: 0.5px;
+  --label-medium-line-height: 16px;
+
+  --label-small-font-size: 14px;
+  --label-small-letter-spacing: 0.5px;
+  --label-small-line-height: 16px;
+
+  --title-large-font-size: 22px;
+  --title-large-letter-spacing: 0px;
+  --title-large-line-height: 28px;
+
+  --title-medium-font-size: 16px;
+  --title-medium-letter-spacing: 0.15px;
+  --title-medium-line-height: 24px;
+
+  --title-small-font-size: 14px;
+  --title-small-letter-spacing: 0.1px;
+  --title-small-line-height: 20px;
+
+  --body-text-color: #5A5A5A;
+  --headline-text-color: #4F4F4F;
+  --default-background-color: #F3F5F6;
+  --footer-color: #191C20;
+  /* --secondary-color: #3B0908; */
+  /* --tetiary-color: #A73934; */
+
+  --secondary-container: #DAE7CA;
+  --on-secondary-container: #141E0C;
+  --outline-variant: #C4C8BB;
+  --on-surface-variant: #44483E;
+  --yellow: rgb(242, 204, 64);
+  --error-container: #FFDAD6;
+  --on-error-container: #410002;
+
+
+
+
+  /* New Styles */
+
+    /* Primary and Secondary Colors */
+    --primary-color: #1C2A48; /* Navy Blue */
+    --secondary-color: #B22222; /* Deep Red */
+  
+    /* Text Colors */
+    --navy-blue: #1C2A48; /* Navy Blue */
+    --deep-red: #B22222; /* Deep Red */
+    --soft-black: #333333; /* Soft Black */
+    --gray1: #666666; /* Gray 1 */
+    --gray2: #777777; /* Gray 2 */
+    --soft-white: #F5F5F5;
+  
+    /* Section Background Colors */
+    --section-background-1: #F7F7F7; /* Light Gray */
+    --section-background-2: #EDEDED; /* Medium Light Gray */
+    --section-background-3: #FAFAFA; /* Almost White */
+    /* Font Family Definitions */
+    --font-family-playfair: 'Playfair Display', serif;
+    --font-family-poppins: 'Poppins', sans-serif;
+  
+    /* Common styles - these will be used across media queries */
+    --page-title-desktop-font-size: 60px;
+    --page-title-laptop-font-size: 48px;
+    --page-title-mobile-font-size: 36px;
+    --page-title-font-family: var(--font-family-playfair);
+    --page-title-font-weight: 700;
+    --page-title-font-color: #1C2A48;
+    --page-title-letter-spacing: 0.5px;
+    --page-title-line-height: 1.2;
+  
+    /* Main Heading (H1) */
+    --main-heading-desktop-font-size: 42px;
+    --main-heading-laptop-font-size: 36px;
+    --main-heading-mobile-font-size: 28px;
+    --main-heading-font-family: var(--font-family-playfair);;
+    --main-heading-font-weight: 700;
+    --main-heading-font-color: #1C2A48;
+    --main-heading-letter-spacing: 0.3px;
+    --main-heading-line-height: 1.3;
+  
+    /* Subheading (H2) */
+    --subheading-desktop-font-size: 32px;
+    --subheading-laptop-font-size: 28px;
+    --subheading-mobile-font-size: 24px;
+    --subheading-font-family: var(--font-family-playfair);;
+    --subheading-font-weight: 600;
+    --subheading-font-color: #B22222;
+    --subheading-letter-spacing: 0.3px;
+    --subheading-line-height: 1.3;
+  
+    /* Section Title */
+    --section-title-desktop-font-size: 28px;
+    --section-title-laptop-font-size: 24px;
+    --section-title-mobile-font-size: 20px;
+    --section-title-font-family: var(--font-family-playfair);;
+    --section-title-font-weight: 600;
+    --section-title-font-color: #FFFFFF;
+    --section-title-letter-spacing: 0.2px;
+    --section-title-line-height: 1.4;
+  
+    /* Body Text */
+    --body-text-desktop-font-size: 18px;
+    --body-text-laptop-font-size: 16px;
+    --body-text-mobile-font-size: 14px;
+    --body-text-font-family: var(--font-family-poppins);
+    --body-text-font-weight: 400;
+    --body-text-font-color: #333333;
+    --body-text-letter-spacing: 0.2px;
+    --body-text-line-height: 1.6;
+  
+    /* Secondary Text */
+    --secondary-text-desktop-font-size: 16px;
+    --secondary-text-laptop-font-size: 14px;
+    --secondary-text-mobile-font-size: 12px;
+    --secondary-text-font-family: var(--font-family-poppins);
+    --secondary-text-font-weight: 400;
+    --secondary-text-font-color: #666666;
+    --secondary-text-letter-spacing: 0.1px;
+    --secondary-text-line-height: 1.5;
+  
+    /* Buttons */
+    --button-desktop-font-size: 18px;
+    --button-laptop-font-size: 16px;
+    --button-mobile-font-size: 14px;
+    --button-font-family: var(--font-family-poppins);
+    --button-font-weight: 700;
+    --button-font-color: #FFFFFF;
+    --button-letter-spacing: 0.2px;
+    --button-line-height: 1.2;
+  
+    /* Links */
+    --link-desktop-font-size: 18px;
+    --link-laptop-font-size: 16px;
+    --link-mobile-font-size: 14px;
+    --link-font-family: var(--font-family-poppins);
+    --link-font-weight: 400;
+    --link-font-color: #FFFFFF;
+    --link-letter-spacing: 0.2px;
+    --link-line-height: 1.6;
+  
+    /* Small Text/Labels */
+    --small-text-desktop-font-size: 14px;
+    --small-text-laptop-font-size: 12px;
+    --small-text-mobile-font-size: 10px;
+    --small-text-font-family: var(--font-family-poppins);
+    --small-text-font-weight: 400;
+    --small-text-font-color: #777777;
+    --small-text-letter-spacing: 0.1px;
+    --small-text-line-height: 1.5;
+  
+    /* Callout Text */
+    --callout-text-desktop-font-size: 24px;
+    --callout-text-laptop-font-size: 20px;
+    --callout-text-mobile-font-size: 18px;
+    --callout-text-font-family: var(--font-family-playfair);
+    --callout-text-font-weight: 600;
+    --callout-text-font-color: #B22222;
+    --callout-text-letter-spacing: 0.2px;
+    --callout-text-line-height: 1.4;
+  
+    /* Captions */
+    --caption-desktop-font-size: 16px;
+    --caption-laptop-font-size: 14px;
+    --caption-mobile-font-size: 12px;
+    --caption-font-family: var(--font-family-poppins);
+    --caption-font-weight: 400;
+    --caption-font-color: #666666;
+    --caption-letter-spacing: 0.1px;
+    --caption-line-height: 1.5;
+  
+    /* Footer Text */
+    --footer-text-desktop-font-size: 16px;
+    --footer-text-laptop-font-size: 14px;
+    --footer-text-mobile-font-size: 12px;
+    --footer-font-family: var(--font-family-poppins);
+    --footer-text-font-weight: 400;
+    --footer-text-font-color: #F5F5F5;
+    --footer-text-letter-spacing: 0.2px;
+    --footer-text-line-height: 1.6;
+  }
+
+h1, h2, h3, p, .secondary-text, button, label, .callout-text, .caption, .footer-text, .page-title {
+  box-sizing: border-box;
+}
+
+/* Desktop (≥1440px) */
+
+  .page-title {
+    font-family: var(--page-title-font-family);
+    font-size: var(--page-title-desktop-font-size);
+    font-weight: var(--page-title-font-weight);
+    color: var(--page-title-font-color);
+    letter-spacing: var(--page-title-letter-spacing);
+    line-height: var(--page-title-line-height);
+    padding: 120px 0 40px 0;
+  }
+  h1 {
+    font-family: var(--main-heading-font-family);
+    font-size: var(--main-heading-desktop-font-size);
+    font-weight: var(--main-heading-font-weight);
+    color: var(--main-heading-font-color);
+    letter-spacing: var(--main-heading-letter-spacing);
+    line-height: var(--main-heading-line-height);
+    padding: 20px;
+  }
+  h2 {
+    font-family: var(--subheading-font-family);
+    font-size: var(--subheading-desktop-font-size);
+    font-weight: var(--subheading-font-weight);
+    color: var(--subheading-font-color);
+    letter-spacing: var(--subheading-letter-spacing);
+    line-height: var(--subheading-line-height);
+  }
+  h3 {
+    font-family: var(--section-title-font-family);
+    font-size: var(--section-title-desktop-font-size);
+    font-weight: var(--section-title-font-weight);
+    color: var(--section-title-font-color);
+    letter-spacing: var(--section-title-letter-spacing);
+    line-height: var(--section-title-line-height);
+  }
+  p {
+    font-family: var(--body-text-font-family);
+    font-size: var(--body-text-desktop-font-size);
+    font-weight: var(--body-text-font-weight);
+    color: var(--body-text-font-color);
+    letter-spacing: var(--body-text-letter-spacing);
+    line-height: var(--body-text-line-height);
+    padding: 24px 0 24px 0;
+  }
+  .secondary-text {
+    font-family: var(--secondary-text-font-family);
+    font-size: var(--secondary-text-desktop-font-size);
+    font-weight: var(--secondary-text-font-weight);
+    color: var(--secondary-text-font-color);
+    letter-spacing: var(--secondary-text-letter-spacing);
+    line-height: var(--secondary-text-line-height);
+    padding: 15px 0 0 0;
+  }
+  button {
+    font-family: var(--button-font-family);
+    font-size: var(--button-desktop-font-size);
+    font-weight: var(--button-font-weight);
+    color: var(--button-font-color);
+    letter-spacing: var(--button-letter-spacing);
+    line-height: var(--button-line-height);
+    padding: 15px 40px 15px 40px;
+    border-radius: 25px;
+    background-color: var(--secondary-color);
+    outline: none;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    gap: 16px;
+  }
+  button:hover{
+    background-color: #8b1a1a;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .secondary-button {
+    font-family: var(--button-font-family);
+    font-size: var(--button-desktop-font-size);
+    font-weight: var(--button-font-weight);
+    letter-spacing: var(--button-letter-spacing);
+    line-height: var(--button-line-height);
+    padding: 15px 40px 15px 40px;
+    border-radius: 25px;
+    color: var(--navy-blue);
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--navy-blue);
+    width: fit-content;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .secondary-button:hover{
+    background-color: var(--navy-blue);
+    color: #FFFFFF;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .link {
+    font-family: var(--link-font-family);
+    font-size: var(--link-desktop-font-size);
+    font-weight: var(--link-font-weight);
+    color: var(--link-font-color);
+    letter-spacing: var(--link-letter-spacing);
+    line-height: var(--link-line-height);
+    text-decoration: none;
+    transition: letter-spacing 0.3s ease, border-bottom 0.3s ease;
+    /* padding: 0.2em 0.4em; */
+    border-bottom: 2px solid transparent;
+  }
+  .link:hover {
+    letter-spacing: calc(var(--link-letter-spacing) + 0.5px); /* Slight increase in letter spacing */
+    border-bottom: 2px solid #b22222; /* Firebrick border bottom on hover */
+  }
+  label {
+    font-family: var(--small-text-font-family);
+    font-size: var(--small-text-desktop-font-size);
+    font-weight: var(--small-text-font-weight);
+    color: var(--small-text-font-color);
+    letter-spacing: var(--small-text-letter-spacing);
+    line-height: var(--small-text-line-height);
+  }
+  .callout-text {
+    font-family: var(--callout-text-font-family);
+    font-size: var(--callout-text-desktop-font-size);
+    font-weight: var(--callout-text-font-weight);
+    color: var(--callout-text-font-color);
+    letter-spacing: var(--callout-text-letter-spacing);
+    line-height: var(--callout-text-line-height);
+  }
+  .caption {
+    font-family: var(--caption-font-family);
+    font-size: var(--caption-desktop-font-size);
+    font-weight: var(--caption-font-weight);
+    color: var(--caption-font-color);
+    letter-spacing: var(--caption-letter-spacing);
+    line-height: var(--caption-line-height);
+  }
+  .footer-text {
+    font-family: var(--footer-text-font-family);
+    font-size: var(--footer-text-desktop-font-size);
+    font-weight: var(--footer-text-font-weight);
+    color: var(--footer-text-font-color);
+    letter-spacing: var(--footer-text-letter-spacing);
+    line-height: var(--footer-text-line-height);
+  }
+
+
+/* Laptop (1024px - 1440px) */
+@media only screen and (max-width: 1440px){
+  .page-title {
+    font-family: var(--page-title-font-family);
+    font-size: var(--page-title-laptop-font-size);
+    padding: 70px 0 30px 0;
+  }
+  h1 {
+    font-family: var(--main-heading-font-family);
+    font-size: var(--main-heading-laptop-font-size);
+    padding: 15px;
+  }
+  h2 {
+    font-family: var(--subheading-font-family);
+    font-size: var(--subheading-laptop-font-size);
+  }
+  h3 {
+    font-family: var(--section-title-font-family);
+    font-size: var(--section-title-laptop-font-size);
+  }
+  p {
+    font-family: var(--body-text-font-family);
+    font-size: var(--body-text-laptop-font-size);
+    padding: 20px 0;
+  }
+  .secondary-text {
+    font-family: var(--secondary-text-font-family);
+    font-size: var(--secondary-text-laptop-font-size);
+    padding: 12px 0 0 0;
+  }
+  button {
+    font-family: var(--button-font-family);
+    font-size: var(--button-laptop-font-size);
+    padding: 18px 35px;
+  }
+  .secondary-button {
+    font-family: var(--button-font-family);
+    font-size: var(--button-laptop-font-size);
+    padding: 18px 35px;
+  }
+  .link {
+    font-family: var(--link-font-family);
+    font-size: var(--link-laptop-font-size);
+  }
+  label {
+    font-family: var(--small-text-font-family);
+    font-size: var(--small-text-laptop-font-size);
+  }
+  .callout-text {
+    font-family: var(--callout-text-font-family);
+    font-size: var(--callout-text-laptop-font-size);
+  }
+  .caption {
+    font-family: var(--caption-font-family);
+    font-size: var(--caption-laptop-font-size);
+  }
+  .footer-text {
+    font-family: var(--footer-text-font-family);
+    font-size: var(--footer-text-laptop-font-size);
+  }
+}
+
+/* Mobile (≤1024px) */
+@media only screen and (max-width: 1024px) {
+  .page-title {
+    font-family: var(--page-title-font-family);
+    font-size: var(--page-title-mobile-font-size);
+    padding: 110px 0 20px 0;
+  }
+  h1 {
+    font-family: var(--main-heading-font-family);
+    font-size: var(--main-heading-mobile-font-size);
+    padding: 8px;
+  }
+  h2 {
+    font-family: var(--subheading-font-family);
+    font-size: var(--subheading-mobile-font-size);
+  }
+  h3 {
+    font-family: var(--section-title-font-family);
+    font-size: var(--section-title-mobile-font-size);
+  }
+  p {
+    font-family: var(--body-text-font-family);
+    font-size: var(--body-text-mobile-font-size);
+    padding: 16px 0;
+  }
+  .secondary-text {
+    font-family: var(--secondary-text-font-family);
+    font-size: var(--secondary-text-mobile-font-size);
+    padding-top: 8px;
+  }
+  button {
+    font-family: var(--button-font-family);
+    font-size: var(--button-mobile-font-size);
+    padding: 16px 30px;
+  }
+  .secondary-button {
+    font-family: var(--button-font-family);
+    font-size: var(--button-mobile-font-size);
+    padding: 16px 30px;
+  }
+  .link {
+    font-family: var(--link-font-family);
+    font-size: var(--link-mobile-font-size);
+  }
+  label {
+    font-family: var(--small-text-font-family);
+    font-size: var(--small-text-mobile-font-size);
+  }
+  .callout-text {
+    font-family: var(--callout-text-font-family);
+    font-size: var(--callout-text-mobile-font-size);
+  }
+  .caption {
+    font-family: var(--caption-font-family);
+    font-size: var(--caption-mobile-font-size);
+  }
+  .footer-text {
+    font-family: var(--footer-text-font-family);
+    font-size: var(--footer-text-mobile-font-size);
+  }
+}
+
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--section-background-1);
+}
+
+.react-datepicker__current-month{
+  width: 100%;
+}

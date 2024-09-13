@@ -1,0 +1,484 @@
+.roomsAndSuites{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--body-text-color);
+    font-family: var(--default-font-family);
+    font-size: var(--body-large-font-size); 
+    letter-spacing: var(--body-large-letter-spacing);
+    z-index: 0;
+
+}
+
+h1, h2, h3, h4, p{
+    margin: 0;
+}
+
+.roomsAndSuitesContainer{
+    padding: 0 60px 80px 60px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+header button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px;
+    gap: 16px;
+    border-radius: 16px;
+    border: 2px solid #1C2A48;
+    background: #F3F5F6;
+    color: var(--secondary-color);
+    box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.30);
+}
+
+header button:hover{
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #1C2A48;
+    transition: ease-in .25s;
+}
+
+.updatedDropLink{
+    left: 14px; 
+    top: 59px;
+    margin: 0;
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 168px;
+    border-radius: 4px;
+    background-color: var(--default-background-color);
+    color: var(--body-text-color);
+    position: absolute;
+    z-index: 99999px;
+    box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+}
+
+.updatedDropLink li{
+    color: inherit;
+    text-align: start;
+    text-decoration: none;
+    font-size: var(--label-large-font-size); 
+    letter-spacing: var(--label-large-letter-spacing);
+    /* line-height: var(--label-large-line-height);    */
+    list-style: none;
+    margin: 0;
+  }
+
+    .dropLink{
+        color: var(--headline-text-color);
+        text-decoration: none;
+        margin: 0;
+        padding: 12px;
+        text-align: start;
+      }
+    
+      .dropLink:hover{
+        background-color: #5E5E5E;
+        transition: ease-in .25s;
+        color: var(--default-background-color);
+      }
+    
+
+.roomsAndSuites label{
+    margin: 0;
+    padding: 0;
+    font-size: var(--label-large-font-size); 
+    letter-spacing: var(--label-large-letter-spacing);
+}
+
+/* header button label{
+    color: var(--secondary-color)
+} */
+
+.bookDate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+}
+
+.picker{
+    position: absolute;
+    z-index: 1000;
+    top: 60px;
+}
+
+.roomsContainer{
+    box-sizing: border-box;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    box-sizing: border-box;
+}
+
+.room{
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.room h2{
+    /* font-size: var(--headline-large-font-size); */
+    letter-spacing: var(--headline-large-letter-spacing);
+    color: #A11813;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.roomInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 100px; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.roomImgContainer{
+    width: 55%;
+}
+
+.roomImgContainer img{
+    width: 100%;
+    height: 451px;
+}
+
+.roomDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    width: 35%;
+    border-radius: 12px;
+background: #FAFAFA;
+
+/* M3/Elevation Light/5 */
+box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+}
+
+.category{
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.category h3{
+    font-size: var(--title-large-font-size);
+    letter-spacing: var(--title-large-letter-spacing);
+    color: #A11813;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    padding-bottom: 7px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.key{
+    min-width: 75px;
+    margin: 0;
+    padding: 0;
+    color: #3C3C43;
+    font-weight: 500;
+    font-style: normal;
+    font-size: var(--label-large-font-size); 
+    letter-spacing: var(--label-large-letter-spacing);
+    line-height: var(--label-large-line-height);
+}
+
+.info p{
+    width: 100%;
+    max-width: 330px;
+    font-size: var(--body-large-font-size); 
+    letter-spacing: var(--body-large-letter-spacing);
+    line-height: var(--body-large-line-height);
+}
+
+.addRoom{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid var(--secondary-color);
+    width: fit-content;
+    height: 40px;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--default-background-color);
+}
+
+.addRoom button{
+    background-color: none;
+    border-radius: 0;
+    
+    height: 100%;
+    font-size: var(--body-large-font-size); 
+    letter-spacing: var(--body-large-letter-spacing);
+}
+
+.addRoom input{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.book{
+    box-sizing: border-box;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    background: var(--secondary-color);
+    height: 40px;
+    outline: none;
+    color: var(--default-background-color);
+    font-size: var(--body-large-font-size);
+    letter-spacing: var(--body-large-letter-spacing);
+}
+
+@media only screen and (max-width: 1024px){
+    .roomsAndSuitesContainer{
+        padding: 0 40px 30px 40px;
+        font-size: var(--body-medium-font-size); 
+        letter-spacing: var(--body-medium-letter-spacing);
+    }
+
+    header button{
+        padding: 8px 16px;
+        gap: 16px;
+    }
+
+    header{
+        padding-top: 30px;
+    }
+
+    .updatedDropLink{
+        left: 12px; 
+        top: 43px;
+    }
+
+    .roomsAndSuites label{
+        font-size: var(--label-medium-font-size); 
+        letter-spacing: var(--label-medium-letter-spacing);
+    }
+
+    .book{
+        font-size: var(--body-medium-font-size);
+        letter-spacing: var(--body-medium-letter-spacing);
+    }
+
+    .picker{
+        position: absolute;
+        z-index: 1000;
+        top: 45px;
+    }
+
+    .roomImgContainer{
+        width: 60%;
+    }
+    
+    .roomImgContainer img{
+        width: 100%;
+        height: 497px;
+    }
+}
+
+@media only screen and (max-width: 912px){
+    .roomInfo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        align-items: flex-start;
+        gap: 10px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .roomImgContainer{
+        width: 100%;
+    }
+    
+    .roomImgContainer img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .roomDetails{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .updatedDropLink{
+        left: 0; 
+        top: 43px;
+    }
+
+    .category h3{
+        font-size: var(--title-medium-font-size);
+        letter-spacing: var(--title-medium-letter-spacing);
+    }
+
+    .key{
+        font-size: var(--label-medium-font-size); 
+        letter-spacing: var(--label-medium-letter-spacing);
+        line-height: var(--label-medium-line-height);
+    }
+
+    .info p{
+        font-size: var(--body-medium-font-size); 
+        letter-spacing: var(--body-medium-letter-spacing);
+        line-height: var(--body-medium-line-height);
+    }
+
+    .addRoom button{
+        font-size: var(--body-medium-font-size); 
+        letter-spacing: var(--body-medium-letter-spacing);
+    }
+
+    .bookDate{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+    }
+
+    header button{
+        padding: 8px 16px;
+        gap: 8px;
+        border-radius: 16px;
+    }
+}
+
+@media only screen and (max-width: 551px) {
+    .section{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between;
+        align-items: flex-start; */
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 510px){
+    .bookDate{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+
+    header button{
+        padding: 8px 8px;
+        gap: 8px;
+        border-radius: 16px;
+    }
+
+    .picker{
+        position: absolute;
+        z-index: 1000;
+        top: 45px;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 445px){
+    .roomsAndSuitesContainer{
+        padding: 0 20px 20px 20px;
+        font-size: var(--body-small-font-size); 
+        letter-spacing: var(--body-small-letter-spacing);
+    }
+
+    header{
+        padding-top: 20px;
+        gap: 8px;
+    }
+
+    .roomsAndSuites label{
+        font-size: var(--label-small-font-size); 
+        letter-spacing: var(--label-small-letter-spacing);
+    }
+
+    .bookDate{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+
+    header button{
+        padding: 8px 8px;
+        gap: 8px;
+        border-radius: 16px;
+    }
+
+    .category h3{
+        font-size: var(--title-small-font-size);
+        letter-spacing: var(--title-small-letter-spacing);
+    }
+
+    .key{
+        font-size: var(--label-small-font-size); 
+        letter-spacing: var(--label-small-letter-spacing);
+        line-height: var(--label-small-line-height);
+    }
+
+    .info p{
+        font-size: var(--body-small-font-size); 
+        letter-spacing: var(--body-small-letter-spacing);
+        line-height: var(--body-small-line-height);
+    }
+
+    .addRoom button{
+        font-size: var(--body-small-font-size); 
+        letter-spacing: var(--body-small-letter-spacing);
+    }
+
+}

@@ -1,0 +1,383 @@
+footer{
+    background-color: #030416;
+    margin: 0;
+    box-sizing: border-box;
+    /* position: absolute;
+    bottom: 0;
+    width: 100%; */
+    /* line-height: var(--body-large-line-height);    */
+}
+
+.footerContainer{
+    padding: 0;
+    font-family: var(--default-font-family);
+    font-size: var(--body-large-font-size); 
+    letter-spacing: var(--body-large-letter-spacing);
+}
+
+.footerContainer{
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px 60px;
+}
+
+.partA{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.firstSec{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20%;
+}
+
+.firstSec img{
+    width: 68px;
+    height: 55px;
+}
+
+/* .firstSec p{
+    width: 100%;
+} */
+
+.secondSec{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thirdSec{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fourthSec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.fourthSec input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: var(--default-background-color);
+    border: none;
+    width: 226px;
+    padding: 5px 0px;
+    height: 50px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    color: var(--body-text-color);
+    font-size: var(--body-large-font-size);
+    letter-spacing: var(--body-large-letter-spacing);
+}
+
+.fourthSec label{
+    font-family: var(--label-large-font-size);
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    border-radius: 20px;
+    padding: 0 20px;
+    color: var(--default-background-color);
+    background-color: var(--secondary-color);
+    width: 104px;
+    cursor: pointer;
+}
+
+.fourthSec form{
+    background-color: var(--default-background-color);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0 10px;
+    border-radius: 20px;
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 40px;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.partB{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px){
+    .fourthSec input{
+        width: 170px;
+        padding: 5px 0px;
+        height: 50px;
+    }
+    .fourthSec label{
+        height: 40px;
+        margin: 5px 0;
+        border-radius: 20px;
+        padding: 0 10px;
+        width: 80px;
+    }
+    .fourthSec form{
+        background-color: var(--default-background-color);
+        display: flex;
+        align-items: center;
+        border-radius: 25px;
+        padding: 0 5px;
+        border-radius: 20px;
+    }
+    .motivation{
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .footerContainer{
+        font-size: var(--body-medium-font-size); 
+        letter-spacing: var(--body-medium-letter-spacing);
+    }
+      
+    .fourthSec input{
+        padding: 5px 0px;
+        height: 40px;
+        border-radius: 20px 0 0 20px;
+        font-size: var(--body-medium-font-size);
+        letter-spacing: var(--body-medium-letter-spacing);
+    }
+    
+    .fourthSec label{
+        height: 30px;
+        margin: 5px 0;
+        padding: 0 10px;
+        /* width: 104px; */
+        cursor: pointer;
+    }
+
+    .top{
+        padding: 20px 40px;
+    }
+
+    .bottom{
+        padding: 20px 40px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    .footerContainer{
+        font-size: var(--body-small-font-size); 
+        letter-spacing: var(--body-small-letter-spacing);
+    }
+      
+    .fourthSec input{
+        padding: 5px 0px;
+        border-radius: 20px 0 0 20px;
+        font-size: var(--body-small-font-size);
+        letter-spacing: var(--body-small-letter-spacing);
+    }
+
+    .top{
+        padding: 15px;
+    }
+
+    .bottom{
+        padding: 15px;
+    }
+
+    .socialMedia{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .motivation{
+        width: 103px;
+    }
+
+    .firstSec{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    @media only screen and (max-width: 600px){
+    
+        .fourthSec{
+            display: none;
+        }
+
+        .top{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px 40px;
+        }
+
+        .bottom{
+            padding: 20px 40px;
+        }
+
+        .partB{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .partB form{
+            width: 250px;
+        }
+        
+        .partB input{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--default-background-color);
+            border: none;
+            width: 226px;
+            padding: 5px 0px;
+            height: 40px;
+            border-radius: 20px 0 0 20px;
+            outline: none;
+            color: var(--body-text-color);
+            font-size: var(--body-small-font-size);
+            letter-spacing: var(--small-small-letter-spacing);
+        }
+        
+        .partB label{
+            font-family: var(--label-small-font-size);
+            height: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* margin: 5px 0; */
+            border-radius: 20px;
+            padding: 0 10px;
+            color: var(--default-background-color);
+            background-color: var(--secondary-color);
+            /* width: 104px; */
+            cursor: pointer;
+        }
+        
+        .partB form{
+            background-color: var(--default-background-color);
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            padding: 0 10px;
+            border-radius: 20px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 480px){
+
+    .footerContainer{
+        font-size: var(--body-small-font-size); 
+        letter-spacing: var(--body-small-letter-spacing);
+    }
+      
+    .partB input{
+        font-size: var(--body-small-font-size);
+        letter-spacing: var(--body-small-letter-spacing);
+    }
+
+
+
+    .top{
+        padding: 15px;
+    }
+
+    .bottom{
+        padding: 15px;
+    }
+
+    .socialMedia{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .motivation{
+        width: 103px;
+    }
+
+    .firstSec{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .partB input{
+        padding: 5px 0px;
+        border-radius: 20px 0 0 20px;
+        font-size: var(--body-small-font-size);
+        letter-spacing: var(--body-small-letter-spacing);
+        width: 170px;
+        height: 40px;
+    }
+
+    .partB label{
+        height: 30px;
+        margin: 5px 0;
+        border-radius: 20px;
+        padding: 0 10px;
+        width: 80px;
+    }
+    .partB form{
+        background-color: var(--default-background-color);
+        display: flex;
+        align-items: center;
+        border-radius: 25px;
+        padding: 0 5px;
+        border-radius: 20px;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .right p{
+        width: 50px;
+    }
+}

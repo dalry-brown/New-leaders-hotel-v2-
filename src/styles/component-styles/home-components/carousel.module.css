@@ -1,0 +1,275 @@
+/* src/Carousel.module.css */
+.carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.carouselImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  /* height: 700px; */
+  width: 100%;
+}
+
+.carouselImageMiddle {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  /* width: 700px;
+  height: 700px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+
+/*  */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  position: relative;
+}
+
+.carouselImageSide {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  /* width: 700px;
+  height: 700px; */
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  justify-content: center;
+}
+
+.carouselImageSide img {
+  border-radius: 20px;
+  width: 315px;
+  height: 414.4px;
+  cursor: pointer;
+  /* display: block; */
+  transition: opacity 0.5s ease;
+}
+
+.carouselImageMiddle img {
+  border-radius: 20px;
+  width: 802px;
+  height: 518px;
+  cursor: pointer;
+  /* display: block; */
+  transition: opacity 0.5s ease;
+  box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, 0.1);
+
+}
+
+/* .carouselImage {
+  position: relative;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+} */
+
+/* .carouselImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.5s ease;
+} */
+
+.carouselImageMiddle:hover img {
+  opacity: 0.7; /* Change to the desired level of opacity when hovering */
+}
+
+.carouselImageMiddle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Adjust rgba values for desired darkness */
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  border-radius: 20px;
+}
+
+.carouselImageMiddle:hover::before {
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.carouselImageSide:hover img {
+  opacity: 0.7; /* Change to the desired level of opacity when hovering */
+}
+
+.carouselImageSide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Adjust rgba values for desired darkness */
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  border-radius: 20px;
+}
+
+.carouselImageSide:hover::before {
+  border-radius: 20px;
+  opacity: 1;
+}
+
+.left, .right {
+  /* flex: 0 0 25%; */
+  opacity: 0.5;
+}
+
+.center {
+  /* flex: 0 0 50%;
+  transform: scale(1.2); */
+  opacity: 1; 
+}
+
+.button {
+  display: none;
+  background: none;
+  background-color: var(--secondary-color);
+  border: none;
+  margin: 0;
+  padding: 0 1px 0 5px;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  height: 50px;
+  color: #F0F0F7;
+}
+
+.button:hover{
+  background-color: #3b0908c4;
+  transition: ease-in .25s;
+}
+
+.button:first-of-type {
+  left: 0;
+}
+
+.button:last-of-type {
+  right: 0;
+}
+
+@media only screen and (max-width: 1200px){
+  .carouselImages {
+    gap: 40px;
+  }
+
+    
+  .carouselImageSide img {
+    max-width: 481.5px;
+    width: 100%;
+    height: 321px;
+    cursor: pointer;
+    /* display: block; */
+  }
+  
+  .carouselImageMiddle img {
+    max-width: 481.5px;
+    width: 100%;
+    height: 363px;
+    cursor: pointer;
+    /* display: block; */
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .carouselImages {
+    gap: 20px;
+  }
+  
+  .carouselImageSide img {
+    width: 481.5px;
+    height: 321px;
+    cursor: pointer;
+    /* display: block; */
+  }
+  
+  .carouselImageMiddle img {
+    width: 481.5px;
+    height: 363px;
+    cursor: pointer;
+    /* display: block; */
+  }
+  
+}
+
+@media only screen and (max-width: 1024px){
+  .carouselImages {
+    gap: 20px;
+  }
+  
+  .carouselImageSide img {
+    width: 481.5px;
+    height: 321px;
+    cursor: pointer;
+    /* display: block; */
+  }
+  
+  .carouselImageMiddle img {
+    width: 481.5px;
+    height: 363px;
+    cursor: pointer;
+    /* display: block; */
+  }
+  
+}
+
+@media only screen and (max-width: 740px){
+  .carouselImages {
+    gap: 15px;
+  }
+  
+  .carouselImageSide img {
+    width: 361.13px;
+    height: 240.75px;
+    cursor: pointer;
+    /* display: block; */
+  }
+  
+  .carouselImageMiddle img {
+    width: 361.13px;
+    height: 275.25px;
+    cursor: pointer;
+    /* display: block; */
+  }
+  
+}
+
+@media only screen and (max-width: 490px){
+  .button:nth-of-type(1){
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    border-radius: 9px 0 0 9px;
+  }
+
+  .button:nth-of-type(2){
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    border-radius: 0 9px 9px 0;
+  }
+
+  
+}

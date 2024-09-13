@@ -1,0 +1,467 @@
+.contact{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--body-text-color);
+    font-family: var(--default-font-family);
+    font-size: var(--body-large-font-size); 
+    letter-spacing: var(--body-large-letter-spacing);
+}
+
+.contactContainer{
+    padding: 0;
+}
+
+.getIntouch{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--default-background-color);
+}
+
+.getIntouchContainer{
+    padding: 160px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    border-bottom: 1px solid #505050;
+}
+
+.getIntouchContainer p{
+    padding: 0;
+}
+
+.key{
+    color: var(--gray2);
+    width: 150px;
+}
+
+.contactInfo{
+    box-sizing: border-box;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+
+.contactInfo h2{
+    width: 30%;
+}
+
+.contactDetail{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 52px;
+    box-sizing: border-box;
+    background-color: var(--section-background-1);
+}
+
+.value{
+    width: 100%;
+}
+
+.contactDetail label{
+    width: 100px;
+}
+
+.faqContainer{
+    box-sizing: border-box;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.faq{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 52px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.faqBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+    width: 100%;
+}
+
+.question{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* gap: 16px; */
+    cursor: pointer;
+    width: 100%;
+}
+
+.question button{
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 24px;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.answer{
+    transition: 25s ease-in;
+}
+
+.formAndMap{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--default-background-color);
+}
+
+.formAndMapContainer{
+    padding: 160px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form{
+    width: 45%;
+    padding: 10px;
+}
+
+.form h2{
+    width: 100%;
+    /* padding-bottom: 30px; */
+}
+
+.form p{
+    /* padding-bottom: 40px; */
+}
+
+.form form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form fieldset{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+
+input{
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--body-text-color, #5A5A5A);
+    background: #F3F5F6;
+    height: 40px;
+    outline: none;
+    color: var(--body-text-color);
+    font-size: var(--bodyel-large-font-size);
+    letter-spacing: var(--body-large-letter-spacing);
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.emailAndPhone{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+} 
+
+.message{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+} 
+
+.message textarea{
+    width: 100%;
+    min-height: 133px;
+    border-radius: 8px;
+    border: 1px solid var(--body-text-color, #5A5A5A);
+    background: #F3F5F6;
+    height: 40px;
+    outline: none;
+    color: var(--body-text-color);
+    font-size: var(--bodyel-large-font-size);
+    letter-spacing: var(--body-large-letter-spacing);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.form button{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--body-text-color, #5A5A5A);
+    background: var(--secondary-color);
+    height: 40px;
+    outline: none;
+    color: var(--default-background-color);
+    font-size: var(--bodyel-large-font-size);
+    letter-spacing: var(--body-large-letter-spacing);
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.map{
+    background-color: var(--default-background-color);
+    width: 55%;
+    height: 450px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media only screen and (max-width: 1024px){
+    
+.getIntouchContainer{
+    padding: 130px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.contactDetail{
+    padding: 10px 30px;
+    gap: 26px;
+}
+
+.question button{
+    width: 38px;
+    height: 38px;
+}
+
+.faq{
+    padding: 10px 30px;
+    gap: 26px;
+}
+
+.faqContainer{
+    width: 100%;
+}
+
+.faq{
+    width: 100%;
+    /* background-color: red; */
+}
+
+.formAndMapContainer{
+    padding: 130px 30px;
+    gap: 15px;
+}
+
+.form form{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form fieldset{
+    gap: 10px;
+}
+
+.form label{
+    font-size: var(--label-medium-font-size);
+    letter-spacing: var(--label-medium-letter-spacing);
+}
+
+.emailAndPhone{
+    gap: 5px;
+} 
+
+.name{
+    gap: 5px;
+} 
+
+input{
+    border-radius: 8px;
+    height: 28px;
+    font-size: var(--body-medium-font-size);
+    letter-spacing: var(--body-medium-letter-spacing);
+    padding: 0 5px;
+} 
+
+.message{
+    gap: 5px;
+} 
+
+.message textarea{
+    min-height: 93.1px;
+    border-radius: 8px;
+    height: 40px;
+    font-size: var(--bodyel-medium-font-size);
+    letter-spacing: var(--body-medium-letter-spacing);
+    padding: 5px;
+}
+}
+
+/* @media only screen and (max-width: 790px){
+    .getIntouchContainer:nth-of-type(3){
+        padding: 20px;
+        flex-direction: column;
+
+        justify-content: center;
+        gap: 15px;
+    }
+}
+ */
+
+@media only screen and (max-width: 700px){
+    .form{
+        width: 60%;
+        padding: 10px;
+    }
+
+    .map{
+        width: 40%;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 630px){
+    
+.getIntouchContainer{
+    padding: 75px 15px;
+    flex-direction: column;
+    /* display: flex;
+    align-items: center; */
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact h2{
+    width: 100%;
+}
+
+.contactDetail p{
+    width: 100%;
+}
+
+.contactInfo{
+    padding: 10px 0;
+    gap: 26px;
+    width: 100%;
+}
+
+.formAndMapContainer{
+    flex-direction: column;
+    padding: 75px 15px;
+    gap: 15px;
+}
+
+.form{
+    width: 100%;
+    padding: 10px;
+}
+
+.form h2{
+    width: 100%;
+    padding-bottom: 14.7px;
+}
+
+.form p{
+    padding-bottom: 19.6px;
+}
+
+.map{
+    width: 100%;
+    height: 300px;
+}
+
+
+}
+
+@media only screen and (max-width: 430px){
+    
+
+.contact h2{
+    width: 100%;
+}
+
+.contactDetail{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.contactDetail p{
+    width: 100%;
+}
+
+.contactInfo{
+    padding: 10px 0;
+    gap: 26px;
+    width: 100%;
+}
+
+.question button{
+    width: 28px;
+    height: 28px;
+}
+
+input{
+    font-size: var(--body-small-font-size);
+    letter-spacing: var(--body-small-letter-spacing);
+} 
+
+.message textarea{
+    font-size: var(--body-small-font-size);
+    letter-spacing: var(--body-small-letter-spacing);
+}
+}
+
