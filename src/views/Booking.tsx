@@ -342,7 +342,7 @@ const PaymentDecision = () => {
           />
         </div> 
         <div className={ bookingStyle.proceedToConfirm }>
-          <h3 className={bookingStyle.signInSuccess}>Hotel Payment Confirmed</h3>
+          <h3 className={bookingStyle.signInSuccess} style={{color: '#1C2A48'}}>Hotel Payment Confirmed</h3>
           <div className={ bookingStyle.proceed }>
             <Link className={bookingStyle.proceedLink} to='/booking/payment-choice'>
               <h4 className={bookingStyle.proceedArrowText}>Proceed to make view booking</h4>
