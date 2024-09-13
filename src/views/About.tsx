@@ -4,7 +4,6 @@ import vans from '../assets/vans.png'
 import { usePageStore } from "../store/basicStore"
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
-import newleadersvideo from '../assets/newleadersvideo.mp4'
 
 const About = () => {
 
