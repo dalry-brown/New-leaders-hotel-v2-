@@ -49,20 +49,20 @@
     justify-content: center;
 }
 
-video{
+.video{
     width: 802px;
     height: auto;
     border-radius: 12px;
     box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
 }
 
-/* .videoIframe{
+.videoIframe{
     width: 656px;
     height: 368px;
     border-radius: 12px;
     border: none;
     outline: none;
-} */
+}
 
 .brand{
     margin: 0;
@@ -192,15 +192,15 @@ video{
 }
 
 @media only screen and (max-width: 1245px){
-    video{
+    .video{
         width: 524.8px;
         height: auto
     }
     
-    /* .videoIframe{
+    .videoIframe{
         width: 524.8px;
         height: 302.4px;
-    } */
+    }
 }
 
 @media only screen and (max-width: 1024px){
@@ -218,15 +218,15 @@ video{
         gap: 20px;
     } */
 
-    video{
+    .video{
         width: 499.5px;
         height: auto
     }
     
-    /* .videoIframe{
+    .videoIframe{
         width: 499.5px;
         height: 281px;
-    } */
+    }
 
     .brandContainer{
         padding: 130px 30px;
@@ -294,15 +294,15 @@ video{
 }
 
 @media only screen and (max-width: 900px){
-    video{
+    .video{
         width: 390px;
         height: 222.8px;
     }
     
-    /* .videoIframe{
+    .videoIframe{
         width: 390px;
         height: 222.8px;
-    } */
+    }
 }
 
 @media only screen and (max-width: 850px){
@@ -402,13 +402,13 @@ video{
         width: 524.8px;
     }
 
-    video{
+    /* .video{
         width: 100%;
         height: auto;
     }
     
-    /* .videoIframe{
-        width: 524.8px;
+    .videoIframe{
+        width: 100%;
         height: 302.4px;
     } */
 }
@@ -418,7 +418,7 @@ video{
         width: 390px;
     }
 
-    /* .video{
+    .video{
         width: 390px;
         height: 222.8px;
     }
@@ -426,7 +426,7 @@ video{
     .videoIframe{
         width: 390px;
         height: 222.8px;
-    } */
+    }
 }
 
 @media only screen and (max-width: 430px){
@@ -445,7 +445,7 @@ video{
         line-height: var(--body-small-line-height);
     } */
 
-    /* .video{
+    .video{
         width: 299.7px;
         height: 162.8px;
     }
@@ -453,7 +453,7 @@ video{
     .videoIframe{
         width: 299.7px;
         height: 162.8px;
-    } */
+    }
 
     .brandContainer{
         padding: 75px 15px;

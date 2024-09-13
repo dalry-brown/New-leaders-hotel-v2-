@@ -35,13 +35,13 @@ const About = () => {
               <p style={{width: '100%', textAlign: 'center'}}>Welcome to New Leaders Hotel, where luxury meets unparalleled elegance. Our hotel is a sanctuary of sophistication and comfort, designed to provide an exceptional experience for discerning travelers. At New Leaders Hotel, we redefine luxury with meticulous attention to detail and a commitment to excellence.</p>
             </div>
             <div className={aboutStyle.video}>
-            {/* <iframe className={aboutStyle.videoIframe} src="https://player.vimeo.com/video/811970471?h=b0339dee01&autoplay=1&loop=1&autopause=0&muted=1&title=0&byline=0&portrait=0&controls=0"  
+            <iframe className={aboutStyle.videoIframe} src="https://player.vimeo.com/video/811970471?h=b0339dee01&autoplay=1&loop=1&autopause=0&muted=1&title=0&byline=0&portrait=0&controls=0"  
             allow="autoplay">
-            </iframe> */}
-              <video autoPlay loop muted>
+            </iframe>
+              {/* <video autoPlay loop muted>
                 <source src={newleadersvideo} type="video/mp4"/>
                 Your browser does not support the video tag.
-              </video>
+              </video> */}
             </div>
           </div>
         </section>
