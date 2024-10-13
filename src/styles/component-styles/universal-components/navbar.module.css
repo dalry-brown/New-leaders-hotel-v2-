@@ -28,7 +28,8 @@
     text-decoration: none;
     margin: 0;
     padding: 12px;
-    color: inherit;
+    /* color: inherit; */
+    color: #FFFFFF;
   }
 
   .dropLink:hover{
