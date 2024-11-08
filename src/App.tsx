@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Pages from './views/Pages'
 import Login from './views/Login'
 import SignUp from './views/SignUp'
-import Booking from './views/Booking'
+import Maintenance from './views/Maintenance'
 
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
         <Route path='/*' element={<Pages/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/sign-up' element={<SignUp />} />
-        <Route path='/booking/*' element={<Booking/>} />
+        <Route path='/booking/*' element={<Maintenance pageName="Booking"/>} />
       </Routes>
     </>
   )

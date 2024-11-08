@@ -4,11 +4,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 30px 0;
+  margin: 30px 0;
+  padding: 10px 0;
   position: relative;
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
+  background-color: var(--section-background-1);
 }
 
 .carouselImages {
@@ -134,33 +136,38 @@
   opacity: 1; 
 }
 
-.button {
-  display: none;
-  background: none;
-  background-color: var(--secondary-color);
+.carouselBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #030416;
   border: none;
   margin: 0;
   padding: 0 1px 0 5px;
   font-size: 2rem;
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
   z-index: 1;
-  height: 50px;
+  height: 100%;
   color: #F0F0F7;
+  width: 50px;
+  border-radius: 0;
+  box-sizing: border-box;
+  opacity: .5;
 }
 
-.button:hover{
-  background-color: #3b0908c4;
+.carouselBtn:hover{
+  background-color: #030416;
+  opacity: .9;
   transition: ease-in .25s;
 }
 
-.button:first-of-type {
+.carouselBtn:first-of-type {
   left: 0;
 }
 
-.button:last-of-type {
+.carouselBtn:last-of-type {
   right: 0;
 }
 
@@ -251,24 +258,24 @@
 }
 
 @media only screen and (max-width: 490px){
-  .button:nth-of-type(1){
+  .carouselBtn:nth-of-type(1){
     display: flex;
     box-sizing: border-box;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 35px;
-    border-radius: 9px 0 0 9px;
+    opacity: .8;
   }
 
-  .button:nth-of-type(2){
+  .carouselBtn:nth-of-type(2){
     display: flex;
     box-sizing: border-box;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 35px;
-    border-radius: 0 9px 9px 0;
+    opacity: .8;
   }
 
   

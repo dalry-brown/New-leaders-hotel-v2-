@@ -1,6 +1,6 @@
 import signUpStyle from "../styles/view-styles/signUp.module.css"
 import loginImg from "../assets/loginImg.png"
-import google from "../assets/google.png"
+// import google from "../assets/google.png"
 import { Link } from 'react-router-dom'
 import { ArrowBackRounded } from '@mui/icons-material'
 import { useNavigate } from 'react-router-dom'
@@ -75,8 +75,8 @@ const SignUp = () => {
             </fieldset>
             <div className={signUpStyle.btnContainer}>
               <button className={signUpStyle.sign}>Sign Up</button>
-              <h3>or</h3>
-              <button className={signUpStyle.google}><img src={google} alt="Google icon" />Sign Up with Google</button>
+              {/* <h3>or</h3>
+              <button className={signUpStyle.google}><img src={google} alt="Google icon" />Sign Up with Google</button> */}
               <span className={signUpStyle.account}><label htmlFor="">Already have an account?</label><label><Link style={{color: '#3B0908', letterSpacing: '0', padding: 0}} to='/login'>Sign in now</Link></label></span>
             </div>
           </form>

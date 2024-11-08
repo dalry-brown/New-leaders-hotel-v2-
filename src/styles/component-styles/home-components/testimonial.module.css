@@ -23,11 +23,12 @@
     outline: none;
     cursor: pointer;
     color: var(--body-text-color);
+    border-radius: 0;
 }
 
 .arrow:hover{
     /* background-color: #5a5a5a75; */
-    background-color: var(--secondary-color);
+    background-color: #030416;
     color: #F0F0F7;
     transition: ease-in .25s;
 }
@@ -159,6 +160,9 @@
         cursor: pointer;
         color: var(--body-text-color);
         border: 1px solid #9B9B9B ;
+        border-radius: 0;
+        width: 20px;
+        height: 20px;
     }
     
     .smallArrow:hover{

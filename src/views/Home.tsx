@@ -84,7 +84,7 @@ const Home = () => {
               <p style={{color: '#FFFFFF', textAlign: 'center'}} className={homeStyle.heroCaption}>Discover the pinnacle of luxury and comfort. Immerse yourself in a serene haven where elegance meets exceptional service. Your unforgettable stay begins here.</p>
             </div>
             <div className={homeStyle.helplineContainer}>
-              <Link style={{textDecoration: 'none', color: 'inherit'}} to='/contact#contactUs'>
+              <Link style={{textDecoration: 'none', color: 'inherit'}} to={`tel:${233248498755}`}>
               <button className={homeStyle.helpline} style={{margin: '20px'}}>
                 <div className={homeStyle.left}>
                   {/* <Call style={{ fontSize: 24, color: '#F3F5F6'}}/> */}

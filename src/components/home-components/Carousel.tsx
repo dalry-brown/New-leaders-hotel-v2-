@@ -29,7 +29,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
 
   return (
     <div className={styles.carousel}>
-      <button className={styles.button} onClick={handlePrev} aria-label="Previous Image">‹</button>
+      <button className={styles.carouselBtn} onClick={handlePrev} aria-label="Previous Image">‹</button>
       <div className={styles.carouselImages}>
         <div className={`${styles.carouselImageSide} ${styles.left}`}>
           <img onClick={handlePrev} src={images[leftIndex].img} alt="Left" />
@@ -41,7 +41,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
           <img onClick={handleNext} src={images[rightIndex].img} alt="Right" />
         </div>
       </div>
-      <button className={styles.button} onClick={handleNext} aria-label="Next Image">›</button>
+      <button className={styles.carouselBtn} onClick={handleNext} aria-label="Next Image">›</button>
     </div>
   );
 };

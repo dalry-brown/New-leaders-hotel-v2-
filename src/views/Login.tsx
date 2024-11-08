@@ -1,6 +1,6 @@
 import signUpStyle from "../styles/view-styles/signUp.module.css";
 import loginImg from "../assets/loginImg.png";
-import google from "../assets/google.png";
+// import google from "../assets/google.png";
 import { Link } from 'react-router-dom';
 import { useAuth } from '../store/authStore';
 import { useBookingStatus, useBookingState, useBookingStyleChanges } from '../store/bookingStore';
@@ -13,6 +13,7 @@ const Login = () => {
   const { completeSignIn } = useBookingStatus();
   const { completedSignInState, activeBookingState, defaultPaymentState } = useBookingStyleChanges();
   const { setSignInStateObj, setBookingStateObj, setPaymentStateObj } = useBookingState();
+
 
   const navigate = useNavigate();
 
@@ -62,11 +63,11 @@ const Login = () => {
             </fieldset>
             <div className={signUpStyle.btnContainer}>
               <button type="submit" className={signUpStyle.sign}>Sign In</button>
-              <h3>or</h3>
-              <button type="button" className={signUpStyle.google}>
+              {/* <h3>or</h3> */}
+              {/* <button type="button" className={signUpStyle.google}>
                 <img src={google} alt="Google icon" />
                 Sign In with Google
-              </button>
+              </button> */}
               <span className={signUpStyle.account}>
                 <label htmlFor="">Don't have an account?</label>
                 <label>

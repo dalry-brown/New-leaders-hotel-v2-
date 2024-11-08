@@ -288,7 +288,7 @@ const RoomsAndSuites: React.FC = () => {
                     <div className={roomStyle.btns}>
                       <div className={roomStyle.addRoom}>
                         <button onClick={() => handleCountChange(room.index, 1)}>
-                          <Add style={{ backgroundColor: '#B22222', color: '#FFFFFF' }} />
+                          <Add style={{ backgroundColor: 'inherit', color: '#FFFFFF' }} />
                         </button>
                         <button style={{ backgroundColor: '#B22222', color: '#FFFFFF', outline: 'none' }}>
                           {currentCount}
@@ -297,7 +297,7 @@ const RoomsAndSuites: React.FC = () => {
                           onClick={() => handleCountChange(room.index, -1)}
                           disabled={currentCount === 0}
                         >
-                          <Remove style={{ backgroundColor: 'B22222', color: '#FFFFFF' }} />
+                          <Remove style={{ backgroundColor: 'inherit', color: '#FFFFFF' }} />
                         </button>
                       </div>
                       <button className={roomStyle.book} onClick={() => handleBook(room.roomType.accType)}>Book</button>
